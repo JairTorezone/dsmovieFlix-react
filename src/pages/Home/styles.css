@@ -2,17 +2,64 @@
   height: calc(100vh - 68px);
   padding: 12px 10px;
 
+  width: 100%;
+
   display: flex;
   justify-content: center;
 }
+.dsmovies-home-content {
+  display: flex;
+}
+
+/*********** style banner */
 .home-description {
   display: none;
+  width: 397px;
+
+  padding: 60px 0;
+
+  padding-left: 27px;
+  padding-right: 50px;
+}
+
+.home-description .info {
+  margin-bottom: 51px;
+}
+
+.home-description .info h2 {
+  font-size: 48px;
+  font-weight: 700;
+
+  line-height: 65px;
+  letter-spacing: -1.5%;
+
+  margin-bottom: 20px;
+
+  color: #fff;
+}
+.home-description .info p {
+  font-size: 20px;
+  font-weight: 400;
+
+  width: 300px;
+
+  line-height: 30px;
+  letter-spacing: -1.5%;
+
+  color: #f2f2f2;
+}
+.home-description .image {
+  text-align: start;
+
+  margin-left: -27px;
 }
 
 /**********styles login*/
 .home-login {
   width: 100%;
   min-width: 300px;
+
+  height: fit-content;
 
   padding: 60px 17px 100px;
   border-radius: 4px;
@@ -79,7 +126,7 @@
   .home-login {
     min-width: 480px;
 
-    padding: 74px 51px 125px;
+    padding: 74px 51px 140px;
   }
   .home-login .home-form h2 {
     margin-bottom: 35px;
@@ -92,5 +139,51 @@
 
   .home-login .home-form form div:nth-child(2) {
     margin-bottom: 74px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dsmovies-home-container {
+    padding: 40px 0;
+    gap: 50px;
+  }
+  .dsmovies-home-content {
+    gap: 150px;
+  }
+
+  .home-description {
+    display: block;
+  }
+
+  .home-login {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .home-description {
+    width: 450px;
+  }
+  .home-description .info h2 {
+    font-size: 55px;
+  }
+  .home-description .info p {
+    font-size: 25px;
+    margin-bottom: 71px;
+  }
+  .dsmovies-home-content {
+    gap: 350px;
+  }
+  .home-description .image {
+  }
+  .home-description .image svg {
+    width: 497px;
+    height: auto;
+  }
+
+  .home-login {
+    max-width: 480px;
+
+    padding: 74px 51px 230px;
   }
 }
