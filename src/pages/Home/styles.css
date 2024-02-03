@@ -9,7 +9,7 @@
   display: none;
 }
 
-/*sytles login*/
+/**********styles login*/
 .home-login {
   width: 100%;
   min-width: 300px;
@@ -30,6 +30,8 @@
   line-height: 49px;
   letter-spacing: -1.5%;
   margin-bottom: 20px;
+
+  text-align: center;
 }
 
 .home-login .home-form form {
@@ -54,6 +56,10 @@
   font-size: 16px;
 }
 
+.home-login .home-form form div:nth-child(2) {
+  margin-bottom: 54px;
+}
+
 .home-login form label {
   position: absolute;
   width: 1px;
@@ -64,4 +70,27 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+@media (min-width: 576px) {
+  .dsmovies-home-container {
+    padding: 50px 50px;
+  }
+  .home-login {
+    min-width: 480px;
+
+    padding: 74px 51px 125px;
+  }
+  .home-login .home-form h2 {
+    margin-bottom: 35px;
+  }
+
+  .home-login .home-form form {
+    gap: 30px;
+    max-width: 480px;
+  }
+
+  .home-login .home-form form div:nth-child(2) {
+    margin-bottom: 74px;
+  }
 }
