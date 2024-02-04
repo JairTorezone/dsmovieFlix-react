@@ -7,7 +7,6 @@ import "./styles.css";
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <div className="dsmovies-home-container">
         <div className="dsmovies-home-content">
           <div className="home-description">
