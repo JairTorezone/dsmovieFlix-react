@@ -1,4 +1,7 @@
 button {
+  width: 100%;
+  max-width: 373px;
+
   background-color: #ffc700;
   color: #000;
 

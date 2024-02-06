@@ -1,4 +1,3 @@
-import Navbar from "components/Navbar";
 import { ReactComponent as HomeImage } from "assets/images/home.svg";
 import Button from "components/Button";
 
